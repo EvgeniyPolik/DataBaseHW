@@ -1,0 +1,19 @@
+# Создание таблицы
+
+CREATE TABLE `testdb`.`phones` (
+	`id` INT NOT NULL AUTO_INCREMENT,
+	`brend` VARCHAR(25) NOT NULL,
+	`model` VARCHAR(15) NOT NULL,
+	`count` INT NOT NULL DEFAULT 0,
+	`price` DECIMAL(6,2) NULL,
+PRIMARY KEY (`id`));
+
+
+# Заполнение
+
+INSERT INTO `testdb`.`phones` (`brend`, `model`, `count`, `price`) 
+	VALUES  ('samsung', 'a300', '5', '15000'),
+		('sumsung', 'a100', '10', '12000'),
+		('apple', 'se2', '10', '45000'),
+		('apple', '13Pro', '2', '75000'),
+		('readme', 'c30', '1', '15000');
